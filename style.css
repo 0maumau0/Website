@@ -1,0 +1,83 @@
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+
+}
+
+.about {
+    height: 15%;
+    width: auto;
+    background-color: rgb(234, 230, 221);
+}
+
+.frontpicture span {
+    border-radius: 50%;
+    border: 2px solid;
+    background-color: white;
+    color: black;
+    display: flex;
+    min-height: 80px;
+    min-width: 300px;
+    justify-self: center;
+    background-image: url(Pictures/waiting\ for\ Bus.png);
+    display: block;
+    text-align: center;
+}
+.frontpicture span p{
+    position: relative;
+    align-items: center;
+    font-size: large;
+    color: black;
+    align-content: center;
+    padding: 3%;
+    height: auto;
+
+}
+
+.frontpicture {
+    background-image: url(Pictures/R.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    align-content: center;
+    height: 50%;
+}
+
+.testbutton {
+    position: relative;
+}
+
+.projects {
+    background-color: black;
+    height: 50%;
+}
+
+.contact {
+    height: 15%;
+    background-color: rgb(101, 46, 129);
+}
+
+body {
+    color: white;
+    height: 100%;
+    margin: 0%;
+}
+
+p {
+    margin: 0%;
+}
+
+.page {
+    height: 1000px;
+    width: 100%;
+}
+
+html {
+    background-color: black;
+    height: 100%;
+}
+
+/* h2{
+} */
