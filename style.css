@@ -49,9 +49,10 @@ h1 {
     position: relative;
 }
 
-.projects {
-    background-color: black;
-    height: 50%;
+.projects-canvas {
+    background-color: rgb(90, 90, 90);
+    /* height: 50%;
+    width: 100%; */
 }
 
 .contact {
