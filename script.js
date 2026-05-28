@@ -15,23 +15,26 @@ var Website;
             this.standartSinus = standSinus;
             this.amplitude = amplitude;
             this.radius = rad;
-            this.xstart = xmove;
+            this.xstart = canvas.width * 0.2;
             this.numBalls = balls;
             this.height = ((stepsheight * (heightPercent / 100)) * CscaleY) / this.numBalls;
             this.sinusFactor = standSinus / this.numBalls;
         }
-        draw() {
+        draw(index) {
+            console.log(this.xstart + "start");
             ctx.strokeStyle = "white";
             ctx.fillStyle = "white";
             for (let i = 0; i <= this.numBalls; i++) {
                 console.log(this.sinusFactor);
                 ctx.beginPath();
-                ctx.arc(this.xstart * CscaleX + (10 * Math.sin(i * this.sinusFactor)), i * this.height, this.radius, 0, 360);
+                ctx.arc((this.xstart + (canvas.width * 0.8 / Ropes.length) * index) + (this.amplitude * Math.sin(i * this.sinusFactor)), i * this.height, this.radius, 0, 360);
                 ctx.stroke();
                 ctx.closePath();
                 ctx.fill();
             }
             ;
+            let xCordinate = this.xstart + (canvas.width * 0.8 / Ropes.length) * index;
+            setupProjects(xCordinate, this.height * this.numBalls, index);
         }
     }
     const canvas = document.getElementById("canvasDraw");
@@ -53,9 +56,20 @@ var Website;
         CscaleX = canvas.width / stepsWidth;
         CscaleY = canvas.height / stepsheight;
         initializeRopes();
-        Ropes.forEach((r) => {
-            r.draw();
+        Ropes.forEach((r, i) => {
+            r.draw(i);
         });
+    }
+    function setupProjects(xpos, ypos, index) {
+        let projectId = "Project" + (index + 1) + "";
+        let project = document.getElementById(projectId);
+        if (project === null)
+            return;
+        project.style.width = "" + (canvas.width * 0.3) + "px";
+        project.style.height = "" + (canvas.height * 0.25) + "px";
+        project.style.left = "" + (xpos - project.clientWidth / 2) + "px";
+        project.style.top = "" + ypos + "px";
+        project.style.backgroundImage = "url(Pictures/R.jpg)";
     }
     function update() {
         requestAnimationFrame(update);

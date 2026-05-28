@@ -29,11 +29,11 @@ h1 {
     position: relative;
     align-items: center;
     font-size: large;
-    color: black;
+    color: rgb(0, 0, 0);
     align-content: center;
     padding: 3%;
     height: auto;
-
+    margin: 0%;
 }
 
 .frontpicture {
@@ -45,14 +45,22 @@ h1 {
     height: 50%;
 }
 
-.testbutton {
+.projects-canvas {
     position: relative;
+    background-color: #ccc;
 }
 
-.projects-canvas {
-    background-color: rgb(0, 0, 0);
-    /* height: 50%;
-    width: 100%; */
+.projects-canvas button{
+    color: rgb(211, 126, 77);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-color: rgb(0, 0, 0);
+    background-position: center;
+    background-size: cover;
+    border-style: groove;
+    border-style: solid;
+    border-radius: 10px;
 }
 
 .contact {
@@ -66,19 +74,8 @@ body {
     margin: 0%;
 }
 
-p {
-    margin: 0%;
-}
-
 .page {
     height: 1000px;
     width: 100%;
 }
 
-html {
-    background-color: black;
-    height: 100%;
-}
-
-/* h2{
-} */
