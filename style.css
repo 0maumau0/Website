@@ -15,7 +15,7 @@ h1 {
     min-height: 80px;
     min-width: 300px;
     justify-self: center;
-    background-image: url(Pictures/waiting\ for\ Bus.png);
+    background-image: url(Pictures/DreamTeam/DreamTeam_props3D.jpg);
     display: block;
     text-align: center;
 }
@@ -31,7 +31,7 @@ h1 {
 }
 
 .frontpicture {
-    background-image: url(Pictures/R.jpg);
+    background-image: url(Pictures/website/Test_website.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -46,7 +46,7 @@ h1 {
 }
 
 .projects-canvas button{
-    color: rgb(211, 126, 77);
+    color: rgb(0, 0, 0);
     position: absolute;
     top: 0px;
     left: 0px;
@@ -56,6 +56,14 @@ h1 {
     border-style: groove;
     border-style: solid;
     border-radius: 10px;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    font-size:large;
+    min-width: 100px;
+    
+    
 }
 
 .contact {

@@ -56,8 +56,9 @@ namespace Website {
 
     function initializeRopes(): void {
         Ropes.push(new Rope(30, 10, 25, 50, 20))
-        Ropes.push(new Rope(80, 10, 10, 100,20))
+        Ropes.push(new Rope(70, 10, 10, 100,20))
         Ropes.push(new Rope(20,15,15,50,10))
+        Ropes.push(new Rope(60,20,15,40,10))
     }
 
     function setupScene(): void {
@@ -77,7 +78,7 @@ namespace Website {
         let project: HTMLButtonElement = document.getElementById(projectId) as HTMLButtonElement;
         if (project === null) return;
         project.style.width = "" + canvas.width * 0.15 + "px"
-        project.style.height = "" + (canvas.height * 0.2) + "px"
+        project.style.height = "" + (canvas.height * 0.25) + "px"
         project.style.left = "" + (xpos - project.clientWidth/2) + "px"
         project.style.top = "" + ypos + "px"
     }
