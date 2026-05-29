@@ -6,12 +6,6 @@ h1 {
 
 }
 
-.about {
-    height: 15%;
-    width: auto;
-    background-color: rgb(234, 230, 221);
-}
-
 .frontpicture span {
     border-radius: 50%;
     border: 2px solid;
@@ -42,12 +36,13 @@ h1 {
     background-position: center center;
     background-size: cover;
     align-content: center;
-    height: 50%;
+    height: 40%;
+    
 }
 
 .projects-canvas {
     position: relative;
-    background-color: #ccc;
+    background-color: #000000;
 }
 
 .projects-canvas button{
@@ -64,8 +59,14 @@ h1 {
 }
 
 .contact {
-    height: 15%;
+    height: 10%;
     background-color: rgb(101, 46, 129);
+}
+
+.about {
+    height: 20%;
+    width: auto;
+    background-color: rgb(234, 230, 221);
 }
 
 body {
@@ -75,7 +76,14 @@ body {
 }
 
 .page {
-    height: 1000px;
+    height: 70%;
     width: 100%;
+}
+
+html{ height: 2000px;
+width: auto;}
+
+p{
+    margin: 15px;
 }
 
