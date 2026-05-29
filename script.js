@@ -21,11 +21,9 @@ var Website;
             this.sinusFactor = standSinus / this.numBalls;
         }
         draw(index) {
-            console.log(this.xstart + "start");
             ctx.strokeStyle = "white";
             ctx.fillStyle = "white";
             for (let i = 0; i <= this.numBalls; i++) {
-                console.log(this.sinusFactor);
                 ctx.beginPath();
                 ctx.arc((this.xstart + (canvas.width * 0.8 / Ropes.length) * index) + (this.amplitude * Math.sin(i * this.sinusFactor)), i * this.height, this.radius - ((this.radius / this.numBalls) * i), 0, 360);
                 ctx.stroke();
@@ -47,7 +45,7 @@ var Website;
     let docWidth = document.body.offsetWidth;
     let Ropes = [];
     function initializeRopes() {
-        Ropes.push(new Rope(30, 10, 25, 50, 20));
+        Ropes.push(new Rope(30, 10, 20, 50, 20));
         Ropes.push(new Rope(70, 10, 10, 100, 20));
         Ropes.push(new Rope(20, 15, 15, 50, 10));
         Ropes.push(new Rope(60, 20, 15, 40, 10));
