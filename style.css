@@ -68,13 +68,59 @@ h1 {
 
 .contact {
     height: 10%;
-    background-color: rgb(101, 46, 129);
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    display: flexbox;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.contact h1{
+    font-size: xx-large;
+    color: black;
 }
 
 .about {
     height: 20%;
     width: auto;
     background-color: rgb(234, 230, 221);
+    text-align: left;
+    display: block;
+    font-size: large;
+    color: black;
+    
+    
+}
+
+.about h1{
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+.contact-header{
+    display: inline-flex;
+    align-items: center;
+}
+.contact-action{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+
+.contact-icon{
+    display: block;
+   box-sizing: content-box;
+   line-height: 2px;
+   height: 30px;
+   width: 30px;
+   padding: 5px;
+}
+
+.contact-icon-image{
+    height: 100%;
+    width: 100%;
+object-fit: cover;
+
 }
 
 body {
@@ -89,7 +135,9 @@ body {
 }
 
 html{ height: 2000px;
-width: auto;}
+width: auto;
+background-color: rgb(0, 0, 0);
+}
 
 p{
     margin: 15px;
