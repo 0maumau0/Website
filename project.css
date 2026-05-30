@@ -1,0 +1,74 @@
+html{
+    height: 2500px;
+    width: auto;
+    background-color: black;
+}
+body{
+    height: inherit;
+    width: auto;
+    margin-right: 60px ;
+    margin-left: 60px
+}
+
+div{
+    box-sizing: border-box;
+    border: 5px;
+    color: rgb(0, 0, 0);
+}
+
+main{
+    height: 100%;
+    width: 100%;
+}
+
+.main-div-upper-half{
+    height: 50%;
+    width: auto;
+}
+
+.main-div-top-image{
+    height: 60%;
+    width: auto;
+    position:relative;
+    background-image: url(Pictures/DreamTeam/DreamTeam_all.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2%;
+    background-attachment: fixed;
+}
+
+.main-div-bottom{
+height: 40%;
+width: 100%;
+display:inline-flex;
+margin-bottom: 2%;
+font-size: x-large;
+text-align: center;
+}
+
+.about{
+    width: 50%;
+    height: 100%;
+    background-color: antiquewhite;
+    margin-right: 1%;
+}
+
+.team-and-tools{
+width:50% ;
+height: 100%;
+}
+
+.team{
+ width: 100%;
+ height: 49%;
+ background-color: blueviolet;
+ margin-bottom: 1%;
+}
+
+.tools{
+    width: 100%;
+    height: 49%;
+    background-color: aquamarine;
+    margin-top: 1%;
+}
