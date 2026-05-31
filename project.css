@@ -1,74 +1,140 @@
-html{
+html {
     height: 2500px;
     width: auto;
     background-color: black;
 }
-body{
+
+body {
     height: inherit;
     width: auto;
-    margin-right: 60px ;
-    margin-left: 60px
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
-div{
+div {
     box-sizing: border-box;
     border: 5px;
     color: rgb(0, 0, 0);
 }
 
-main{
+main {
     height: 100%;
     width: 100%;
 }
 
-.main-div-upper-half{
+.main-div-upper-half {
     height: 50%;
     width: auto;
 }
 
-.main-div-top-image{
-    height: 60%;
+.main-div-top-image {
+    height: 58%;
     width: auto;
-    position:relative;
+    position: relative;
     background-image: url(Pictures/DreamTeam/DreamTeam_all.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     margin-bottom: 2%;
     background-attachment: fixed;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
 }
 
-.main-div-bottom{
-height: 40%;
-width: 100%;
-display:inline-flex;
-margin-bottom: 2%;
-font-size: x-large;
-text-align: center;
+.main-div-upper-bottom {
+    height: 38%;
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 2%;
+    font-size: x-large;
+    text-align: center;
 }
 
-.about{
-    width: 50%;
+.about {
+    width: 60%;
     height: 100%;
     background-color: antiquewhite;
     margin-right: 1%;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
 }
 
-.team-and-tools{
-width:50% ;
-height: 100%;
+.team-and-tools {
+    width: 40%;
+    height: 100%;
 }
 
-.team{
- width: 100%;
- height: 49%;
- background-color: blueviolet;
- margin-bottom: 1%;
+.team {
+    width: 100%;
+    height: 49%;
+    background-color: blueviolet;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
 }
 
-.tools{
+.tools {
     width: 100%;
     height: 49%;
     background-color: aquamarine;
     margin-top: 1%;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
+
+}
+
+.main-div-lower-half {
+    height: 50%;
+    width: auto;
+
+}
+
+.main-div-lower-top {
+    height: 25%;
+    width: 100%;
+    display: inline-flex;
+    margin-bottom: 5%;
+}
+
+.video-link {
+    background-color: brown;
+    height: 100%;
+    width: 45%;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
+    margin-right: 1%;
+}
+
+.contribution {
+    background-color: cadetblue;
+    height: 100%;
+    width: 55%;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
+}
+
+.main-div-lower-bottom{
+    display: inline-flex;
+    height: 70%;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
+    position: relative;
+    overflow: hidden;
+     object-fit: cover;
+
+}
+
+.main-div-lower-bottom img{
+    padding: 1px;
+    border-radius: 10px;
+
 }
