@@ -33,7 +33,7 @@ main {
     position: relative;
     background-image: url(Pictures/DreamTeam/DreamTeam_all.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     margin-bottom: 2%;
     background-attachment: fixed;
