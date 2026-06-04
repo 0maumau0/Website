@@ -1,5 +1,5 @@
 html {
-    height: 2500px;
+    height: 2600px;
     width: auto;
     background-color: black;
 }
@@ -23,7 +23,7 @@ main {
 }
 
 .main-div-upper-half {
-    height: 50%;
+    height: 45%;
     width: auto;
 }
 
@@ -87,7 +87,7 @@ main {
 }
 
 .main-div-lower-half {
-    height: 50%;
+    height: 55%;
     width: auto;
 
 }
