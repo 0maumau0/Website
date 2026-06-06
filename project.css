@@ -17,6 +17,14 @@ div {
     color: rgb(0, 0, 0);
 }
 
+p{
+    margin: 0px;
+}
+h2{
+    margin: 0px;
+    padding-bottom: 3px;
+}
+
 main {
     height: 100%;
     width: 100%;
@@ -88,12 +96,37 @@ main {
 .tools {
     width: 100%;
     height: 49%;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     margin-top: 1%;
     border-radius: 10px;
     border-style: double;
     border-width: 10px;
 
+}
+
+.tools-text{
+    height: 70%;
+    width: 100%;
+    display: block;
+    justify-content: left;
+   
+}
+
+.tools-icon{
+    display: inline-flex;
+    height: auto;
+    width: auto;
+}
+
+.tools-icon-link{
+display: block;
+box-sizing: content-box;
+line-height: 2px;
+}
+
+.tools-icon-image{
+object-fit: cover;
+height: 50px;
 }
 
 .main-div-lower-half {
