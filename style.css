@@ -6,6 +6,7 @@ h1 {
 
 }
 
+
 .frontpicture span {
     border-radius: 50%;
     border: 2px solid;
@@ -78,24 +79,36 @@ h1 {
 .contact h1{
     font-size: xx-large;
     color: black;
+    margin: 0;
+    padding-top: 0.5%;
 }
 
 .about {
-    height: 20%;
+    height: 15%;
     width: auto;
     background-color: rgb(234, 230, 221);
-    text-align: left;
     display: block;
     font-size: large;
     color: black;
-    
-    
+    text-align: center;
+    margin-bottom: 2%;
+     overflow-inline:auto;
+}
+
+.about p{
+
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0;
 }
 
 .about h1{
     font-size: xx-large;
     color: black;
     text-align: center;
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 2.5%;
 }
 
 .contact-header{
@@ -130,11 +143,11 @@ body {
 }
 
 .page {
-    height: 70%;
+    height: 75%;
     width: 100%;
 }
 
-html{ height: 2000px;
+html{ height: 1800px;
 width: auto;
 background-color: rgb(0, 0, 0);
 }

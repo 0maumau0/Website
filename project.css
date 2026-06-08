@@ -23,7 +23,7 @@ p{
 
 h2{
     margin: 0px;
-    padding-bottom: 3px;
+    padding-bottom: 2%;
 }
 
 main {
@@ -77,6 +77,23 @@ main {
     border-radius: 10px;
     border-style: double;
     border-width: 10px;
+    text-align: center;
+    overflow-inline: auto;
+}
+
+.about p{
+
+ padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    margin-bottom: 3%;
+    font-size: 90%;
+    
+}
+
+.about h2{
+    margin: 0;
+    padding-bottom: 2.5%;
 }
 
 .team-and-tools {
@@ -93,12 +110,14 @@ main {
     border-style: double;
     border-width: 10px;
     justify-content: left;
+     overflow-inline: auto;
 }
 
 .team p{
- font-size: 20px;
+ font-size: 80%;
  justify-self: left;
- padding-left: 15px;
+ padding-left: 2%;
+ padding-right: 2%;
 }
 
 .tools {
@@ -109,6 +128,7 @@ main {
     border-radius: 10px;
     border-style: double;
     border-width: 10px;
+     overflow-inline: auto;
 
 }
 
