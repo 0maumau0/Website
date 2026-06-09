@@ -115,9 +115,10 @@ main {
 
 .team p{
  font-size: 80%;
- justify-self: left;
+ justify-self: center;
  padding-left: 2%;
  padding-right: 2%;
+ padding-bottom: 1%;
 }
 
 .tools {
@@ -195,7 +196,26 @@ height: 50px;
     border-radius: 10px;
     border-style: double;
     border-width: 10px;
+       text-align: left;
+    overflow-inline: auto;
 }
+
+.contribution h2{
+    margin: 0;
+    padding-bottom: 2.5%;
+    text-align: center;
+}
+
+.contribution p{
+
+ padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+    margin-bottom: 3%;
+    font-size: 120%;
+    
+}
+
 
 .main-div-lower-bottom{
     display: inline-flex;
