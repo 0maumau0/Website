@@ -178,6 +178,14 @@ height: 50px;
     border-style: double;
     border-width: 10px;
     margin-right: 1%;
+    display: inline flex;
+    justify-content: center;
+}
+
+.video-link img{
+    height: 100%;
+    width: auto;
+
 }
 
 .contribution {
@@ -199,7 +207,7 @@ height: 50px;
     border-width: 10px;
     position: relative;
     overflow: hidden;
-     object-fit: cover;
+    object-fit: cover;
 
 }
 
