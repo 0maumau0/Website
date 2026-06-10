@@ -9,7 +9,7 @@ h1 {
 
 .frontpicture span {
     border: 2px solid;
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
     color: black;
     display: flex;
     min-height: 80px;
@@ -21,7 +21,7 @@ h1 {
 .frontpicture span p{
     position: relative;
     align-items: center;
-    font-size: large;
+    font-size: x-large;
     color: rgb(0, 0, 0);
     align-content: center;
     padding: 3%;

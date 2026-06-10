@@ -104,7 +104,7 @@ main {
 .team {
     width: 100%;
     height: 49%;
-    background-color: rgb(182, 104, 255);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 1%;
     border-radius: 10px;
     border-style: double;
@@ -172,7 +172,7 @@ height: 50px;
 }
 
 .video-link {
-    background-color: brown;
+    background-color: rgb(255, 255, 255);
     height: 100%;
     width: 45%;
     border-radius: 10px;
@@ -190,20 +190,20 @@ height: 50px;
 }
 
 .contribution {
-    background-color: cadetblue;
+    background-color: antiquewhite;
     height: 100%;
     width: 55%;
     border-radius: 10px;
     border-style: double;
     border-width: 10px;
-       text-align: left;
+       text-align: center;
     overflow-inline: auto;
 }
 
 .contribution h2{
     margin: 0;
     padding-bottom: 2.5%;
-    text-align: center;
+
 }
 
 .contribution p{
