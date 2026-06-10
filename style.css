@@ -13,12 +13,13 @@ h1 {
     color: black;
     display: flex;
     min-height: 80px;
-    min-width: 300px;
+    min-width: 350px;
     justify-self: center;
     display: block;
     text-align: center;
 }
-.frontpicture span p{
+
+.frontpicture span p {
     position: relative;
     align-items: center;
     font-size: x-large;
@@ -36,7 +37,7 @@ h1 {
     background-size: cover;
     align-content: center;
     height: 40%;
-    
+
 }
 
 .projects-canvas {
@@ -44,14 +45,14 @@ h1 {
     background-color: #000000;
 }
 
-.projects-canvas button p{
-    color: white; 
-    position: relative; 
-    padding-top:55%;
+.projects-canvas button p {
+    color: white;
+    position: relative;
+    padding-top: 55%;
     font-size: x-large;
 }
 
-.projects-canvas button{
+.projects-canvas button {
     color: rgb(0, 0, 0);
     position: absolute;
     top: 0px;
@@ -66,10 +67,10 @@ h1 {
     display: flex;
     justify-content: center;
     padding-top: 5px;
-    font-size:large;
-    min-width:25%;
+    font-size: large;
+    min-width: 25%;
     background-repeat: no-repeat;
-    
+
 }
 
 .about {
@@ -81,17 +82,17 @@ h1 {
     color: black;
     text-align: center;
     margin-bottom: 2%;
-     overflow-inline:auto;
+    overflow-inline: auto;
 }
 
-.about p{
+.about p {
 
     padding-left: 15%;
     padding-right: 15%;
     margin: 0;
 }
 
-.about h1{
+.about h1 {
     font-size: xx-large;
     color: black;
     text-align: center;
@@ -109,39 +110,40 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
-.contact h1{
+.contact h1 {
     font-size: xx-large;
     color: black;
     margin: 0;
     padding-top: 0.5%;
 }
 
-.contact p{
+.contact p {
     font-size: large;
 }
 
-.contact-header{
+.contact-header {
     display: inline-flex;
     align-items: center;
 }
-.contact-action{
+
+.contact-action {
     display: flex;
     background-color: rgb(255, 255, 255);
 }
 
-.contact-icon-link{
+.contact-icon-link {
     display: block;
-   box-sizing: content-box;
-   line-height: 2px;
-   height: 30px;
-   width: 30px;
-   padding: 5px;
+    box-sizing: content-box;
+    line-height: 2px;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
 }
 
-.contact-icon-image{
+.contact-icon-image {
     height: 100%;
     width: 100%;
-object-fit: cover;
+    object-fit: cover;
 
 }
 
@@ -156,12 +158,12 @@ body {
     width: 100%;
 }
 
-html{ height: 2000px;
-width: auto;
-background-color: rgb(0, 0, 0);
+html {
+    height: 2000px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
 }
 
-p{
+p {
     margin: 15px;
 }
-

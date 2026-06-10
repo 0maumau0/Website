@@ -5,7 +5,6 @@ var Website;
         heightPercent;
         amplitude;
         radius;
-        xstart;
         height;
         numBalls;
         standartSinus;
@@ -15,7 +14,6 @@ var Website;
             this.standartSinus = standSinus;
             this.amplitude = amplitude;
             this.radius = rad;
-            this.xstart = canvas.width * 0.25;
             this.numBalls = balls;
             this.height = ((stepsheight * (heightPercent / 100)) * CscaleY) / this.numBalls;
             this.sinusFactor = standSinus / this.numBalls;
@@ -25,14 +23,13 @@ var Website;
             ctx.fillStyle = "white";
             for (let i = 0; i <= this.numBalls; i++) {
                 ctx.beginPath();
-                ctx.arc((this.xstart + (canvas.width * 0.8 / Ropes.length) * index) + (this.amplitude * Math.sin(i * this.sinusFactor)), i * this.height, this.radius - ((this.radius / this.numBalls) * i), 0, 360);
+                ctx.arc(((canvas.width / (Ropes.length + 1)) * (index + 1)) + (this.amplitude * Math.sin(i * this.sinusFactor)), i * this.height, this.radius - ((this.radius / this.numBalls) * i), 0, 360);
                 ctx.stroke();
                 ctx.closePath();
                 ctx.fill();
             }
-
-            let xCordinate = this.xstart + ((canvas.width * 0.75 / Ropes.length) * index);
-            console.log(xCordinate +"x Cordinate")
+            ;
+            let xCordinate = (canvas.width / (Ropes.length + 1)) * (index + 1);
             setupProjects(xCordinate, this.height * this.numBalls, index);
         }
     }
