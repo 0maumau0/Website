@@ -71,11 +71,16 @@ namespace Website {
     function setupProjects(xpos: number, ypos: number, index: number): void {
         let projectId: string = "Project" + (index + 1) + "";
         let project: HTMLButtonElement = document.getElementById(projectId) as HTMLButtonElement;
+        let projparagraph:HTMLParagraphElement = project.lastChild as HTMLParagraphElement;
+        
+        
         if (project === null) return;
-        project.style.width = "" + canvas.width * 0.20 + "px"
-        project.style.height = "" + (canvas.height * 0.30) + "px"
-        project.style.left = "" + (xpos - project.clientWidth / 2) + "px"
-        project.style.top = "" + ypos + "px"
+        project.style.width = "" + canvas.width * 0.20 + "px";
+        project.style.height = "" + (canvas.height * 0.30) + "px";
+        project.style.left = "" + (xpos - project.clientWidth / 2) + "px";
+        project.style.top = "" + ypos + "px";
+
+        projparagraph.style.paddingTop = project.style.height;
     }
 
     function update(): void {
