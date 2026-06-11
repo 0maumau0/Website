@@ -76,5 +76,28 @@ var Website;
     }
     setupScene();
     update();
+    const buttonProject = document.getElementById("span");
+    const folderProject = document.getElementById("folder-projects");
+    console.log(buttonProject);
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded and parsed");
+        const buttonProject = document.getElementById("button-projects");
+        const folderProject = document.getElementById("folder-projects");
+        console.log(buttonProject);
+        buttonProject.addEventListener("mouseover", (event) => {
+            folderProject.style.display = "block";
+            folderProject.style.border = "2px";
+            folderProject.style.borderRadius = "2px";
+            folderProject.style.borderColor = "black";
+            folderProject.style.backgroundColor = "white";
+            let top_button = buttonProject.style.top;
+            let left = buttonProject.style.left;
+            console.log(top_button);
+            console.log(left);
+        });
+        buttonProject.addEventListener("mouseout", (event) => {
+            folderProject.style.display = "none";
+        });
+    });
 })(Website || (Website = {}));
 //# sourceMappingURL=script.js.map

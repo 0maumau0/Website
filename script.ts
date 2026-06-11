@@ -27,12 +27,12 @@ namespace Website {
             for (let i = 0; i <= this.numBalls; i++) {
 
                 ctx.beginPath();
-                ctx.arc(( (canvas.width   / (Ropes.length+1)) * (index+1)) + (this.amplitude * Math.sin(i * this.sinusFactor)), i * this.height, this.radius - ((this.radius / this.numBalls) * i), 0, 360)
+                ctx.arc(((canvas.width / (Ropes.length + 1)) * (index + 1)) + (this.amplitude * Math.sin(i * this.sinusFactor)), i * this.height, this.radius - ((this.radius / this.numBalls) * i), 0, 360)
                 ctx.stroke();
                 ctx.closePath();
                 ctx.fill()
             };
-            let xCordinate: number = (canvas.width  / (Ropes.length+1)) * (index+1);
+            let xCordinate: number = (canvas.width / (Ropes.length + 1)) * (index + 1);
             setupProjects(xCordinate, this.height * this.numBalls, index);
         }
     }
@@ -71,9 +71,9 @@ namespace Website {
     function setupProjects(xpos: number, ypos: number, index: number): void {
         let projectId: string = "Project" + (index + 1) + "";
         let project: HTMLButtonElement = document.getElementById(projectId) as HTMLButtonElement;
-        let projparagraph:HTMLParagraphElement = project.lastChild as HTMLParagraphElement;
-        
-        
+        let projparagraph: HTMLParagraphElement = project.lastChild as HTMLParagraphElement;
+
+
         if (project === null) return;
         project.style.width = "" + canvas.width * 0.20 + "px";
         project.style.height = "" + (canvas.height * 0.30) + "px";
@@ -89,4 +89,39 @@ namespace Website {
 
     setupScene()
     update();
+
+    const buttonProject: HTMLButtonElement = document.getElementById("span") as HTMLButtonElement;
+    const folderProject: HTMLDivElement = document.getElementById("folder-projects") as HTMLDivElement;
+    console.log(buttonProject);
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log("DOM fully loaded and parsed");
+
+        const buttonProject: HTMLButtonElement = document.getElementById("button-projects") as HTMLButtonElement;
+        const folderProject: HTMLDivElement = document.getElementById("folder-projects") as HTMLDivElement;
+        console.log(buttonProject);
+
+        buttonProject.addEventListener("mouseover", (event: MouseEvent) => {
+            folderProject.style.display = "block";
+            folderProject.style.border = "2px";
+            folderProject.style.borderRadius = "2px";
+            folderProject.style.borderColor = "black"
+            folderProject.style.backgroundColor = "white"
+
+            let top_button:string = buttonProject.style.top
+            let left:string = buttonProject.style.left
+            console.log(top_button);
+            console.log(left);
+            
+        });
+
+        buttonProject.addEventListener("mouseout", (event: MouseEvent) => {
+            folderProject.style.display = "none";
+        });
+    });
+
+
+
+
 }
