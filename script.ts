@@ -1,6 +1,5 @@
 namespace Website {
-
-
+    
     class Rope {
         heightPercent: number;
         amplitude: number;
@@ -100,24 +99,35 @@ namespace Website {
 
         const buttonProject: HTMLButtonElement = document.getElementById("button-projects") as HTMLButtonElement;
         const folderProject: HTMLDivElement = document.getElementById("folder-projects") as HTMLDivElement;
-        console.log(buttonProject);
+         const buttonArt: HTMLButtonElement = document.getElementById("button-art") as HTMLButtonElement;
+        const folderArt: HTMLDivElement = document.getElementById("folder-art") as HTMLDivElement;
 
+        //expand header buttons to multiple sections
         buttonProject.addEventListener("mouseover", (event: MouseEvent) => {
             folderProject.style.display = "block";
             folderProject.style.border = "2px";
             folderProject.style.borderRadius = "2px";
             folderProject.style.borderColor = "black"
             folderProject.style.backgroundColor = "white"
-
-            let top_button:string = buttonProject.style.top
-            let left:string = buttonProject.style.left
-            console.log(top_button);
-            console.log(left);
             
         });
 
+        buttonArt.addEventListener("mouseover", (event: MouseEvent) => {
+            folderArt.style.display = "block";
+            folderArt.style.border = "2px";
+            folderArt.style.borderRadius = "2px";
+            folderArt.style.borderColor = "black"
+            folderArt.style.backgroundColor = "white"
+        });
+
+        // fold header buttons down mian section
         buttonProject.addEventListener("mouseout", (event: MouseEvent) => {
             folderProject.style.display = "none";
+        });
+
+
+        buttonArt.addEventListener("mouseout", (event: MouseEvent) => {
+            folderArt.style.display = "none";
         });
     });
 

@@ -35,21 +35,22 @@ h1 {
 }
 
 .header-nav-div{
-    margin-right: 5vW;
+    margin-right: 8vW;
+    margin-left: 8vw;
 }
 
 .header-nav-list-a{
     font-size: x-large;
     text-decoration: none;
     color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .header-nav-list-project{
     border: none;
     background-color: white;
     font-size: x-large;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 
 }
 
@@ -85,6 +86,7 @@ h1 {
     justify-self: center;
     display: block;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .frontpicture span p {

@@ -83,20 +83,29 @@ var Website;
         console.log("DOM fully loaded and parsed");
         const buttonProject = document.getElementById("button-projects");
         const folderProject = document.getElementById("folder-projects");
-        console.log(buttonProject);
+        const buttonArt = document.getElementById("button-art");
+        const folderArt = document.getElementById("folder-art");
+        //expand header buttons to multiple sections
         buttonProject.addEventListener("mouseover", (event) => {
             folderProject.style.display = "block";
             folderProject.style.border = "2px";
             folderProject.style.borderRadius = "2px";
             folderProject.style.borderColor = "black";
             folderProject.style.backgroundColor = "white";
-            let top_button = buttonProject.style.top;
-            let left = buttonProject.style.left;
-            console.log(top_button);
-            console.log(left);
         });
+        buttonArt.addEventListener("mouseover", (event) => {
+            folderArt.style.display = "block";
+            folderArt.style.border = "2px";
+            folderArt.style.borderRadius = "2px";
+            folderArt.style.borderColor = "black";
+            folderArt.style.backgroundColor = "white";
+        });
+        // fold header buttons down mian section
         buttonProject.addEventListener("mouseout", (event) => {
             folderProject.style.display = "none";
+        });
+        buttonArt.addEventListener("mouseout", (event) => {
+            folderArt.style.display = "none";
         });
     });
 })(Website || (Website = {}));

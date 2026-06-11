@@ -24,6 +24,7 @@ p{
 h2{
     margin: 0px;
     padding-bottom: 2%;
+    font-size: 1.5em;
 }
 
 main {
@@ -137,7 +138,7 @@ main {
     height: 70%;
     width: 100%;
     display: block;
-    justify-content: left;
+    justify-content: center;
    
 }
 
@@ -202,13 +203,14 @@ height: 50px;
 
 .contribution h2{
     margin: 0;
-    padding-bottom: 2.5%;
+    padding-bottom: 2%;
+    font-size: xx-large;
 
 }
 
 .contribution p{
 
- padding-left: 5%;
+    padding-left: 5%;
     padding-right: 5%;
     margin: 0;
     margin-bottom: 3%;
