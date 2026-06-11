@@ -85,6 +85,8 @@ var Website;
         const folderProject = document.getElementById("folder-projects");
         const buttonArt = document.getElementById("button-art");
         const folderArt = document.getElementById("folder-art");
+        const buttonHeaderAbout = document.getElementById("header-about");
+        const buttonHeaderContact = document.getElementById("header-contact");
         //expand header buttons to multiple sections
         buttonProject.addEventListener("mouseover", (event) => {
             folderProject.style.display = "block";
@@ -106,6 +108,14 @@ var Website;
         });
         buttonArt.addEventListener("mouseout", (event) => {
             folderArt.style.display = "none";
+        });
+        buttonHeaderAbout.addEventListener('click', () => {
+            let target = document.getElementById("div-about");
+            target.scrollIntoView({ behavior: 'smooth' });
+        });
+        buttonHeaderContact.addEventListener('click', () => {
+            let target = document.getElementById("div-contact");
+            target.scrollIntoView({ behavior: 'smooth' });
         });
     });
 })(Website || (Website = {}));

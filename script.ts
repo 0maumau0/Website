@@ -101,6 +101,8 @@ namespace Website {
         const folderProject: HTMLDivElement = document.getElementById("folder-projects") as HTMLDivElement;
          const buttonArt: HTMLButtonElement = document.getElementById("button-art") as HTMLButtonElement;
         const folderArt: HTMLDivElement = document.getElementById("folder-art") as HTMLDivElement;
+        const buttonHeaderAbout:HTMLButtonElement = document.getElementById("header-about") as HTMLButtonElement;
+        const buttonHeaderContact:HTMLButtonElement = document.getElementById("header-contact") as HTMLButtonElement;
 
         //expand header buttons to multiple sections
         buttonProject.addEventListener("mouseover", (event: MouseEvent) => {
@@ -129,6 +131,16 @@ namespace Website {
         buttonArt.addEventListener("mouseout", (event: MouseEvent) => {
             folderArt.style.display = "none";
         });
+
+        buttonHeaderAbout.addEventListener('click', ()=>{
+        let target: HTMLDivElement = document.getElementById("div-about") as HTMLDivElement;
+            target.scrollIntoView({behavior: 'smooth'})
+        })
+        buttonHeaderContact.addEventListener('click', ()=>{
+        let target: HTMLDivElement = document.getElementById("div-contact") as HTMLDivElement; 
+            target.scrollIntoView({behavior: 'smooth'})
+            
+        })
     });
 
 
