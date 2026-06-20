@@ -185,6 +185,12 @@ height: 50px;
     overflow: hidden;
 }
 
+.video-link iframe{
+    width: 100%;
+    height: auto;
+}
+
+
 .video-link img{
     height: 100%;
     width: auto;

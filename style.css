@@ -43,14 +43,14 @@ h1 {
     font-size: x-large;
     text-decoration: none;
     color: black;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .header-nav-list-buttons{
     border: none;
     background-color: white;
     font-size: x-large;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 
 }
 
@@ -86,7 +86,7 @@ h1 {
     justify-self: center;
     display: block;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .frontpicture span p {
@@ -120,6 +120,7 @@ h1 {
     position: relative;
     padding-top: 55%;
     font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .projects-canvas button {
